@@ -7,6 +7,9 @@ On the landing page, users input their email address. Upon hitting Submit, the e
 
 ![Landing page](/doc/index.png?raw=true "index.html")
 
+### Invalid email
+
+![Landing page](/doc/invalid.png?raw=true "invalid email entered")
 
 ### Success / Email list
 Note that the list gets a scrollbar if it becomes very long.
