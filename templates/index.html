@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+	<section id="register">
+		<h1> Enter your email address to sign up</h1>
+
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+			<div id="errors">
+			<ul>
+			  {% for message in messages %}
+				<li>{{message}}</li>
+			  {% endfor %}
+			 </ul>
+			 </div>
+			{% endif %}
+		 {% endwith %}
+
+		<form action="/process" method="post">
+			<input type="text" name="email">
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+</body>
+</html>

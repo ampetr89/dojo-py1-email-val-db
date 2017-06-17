@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Success!</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+<header>
+	<a href="/">&larr; Return to home page</a>
+</header>
+<section id='confirm-msg'>
+<div>Thank you for signing up. We have sent a confirmation email to the email you've provided: <span>{{email}}</span>.</div>
+</section>
+
+<section id='email-list'>
+	{% if emails %}
+	<h1>Email Addresses Entered</h1>
+	<div id="table-scroll">
+		<table>
+			<thead>
+			 <tr>
+			  <td>Email Address</td><td>Date Added</td><td></td>
+			 </tr>
+			</thead>
+			<tbody>
+			  {% for email, date, id in emails %}
+			  	<tr>
+					<td>{{email}}</td><td>{{date}}</td><td><a href="/remove/{{id}}">Remove</a></td>
+				</tr>
+			  {% endfor %}
+			</tbody>
+		</table>
+	</div>
+	{% endif %}
+</section>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: arial, sans-serif;
+}
+
+
+
+h1{
+	margin-bottom: 1em;
+}
+#errors{
+	margin-top: .5em;
+}
+#errors li{
+	color: crimson;
+
+}
+#errors ul{
+	list-style: none;
+}
+
+
+section{
+	padding-top: 2em;
+	padding-left: 2em;
+
+}
+header{
+	padding-top: 1em;
+	padding-left: 1em;	
+	height: 5vh;
+}
+
+
+
+#confirm-msg{
+	margin: 0 auto;
+	text-align: center;
+	height: 15vh;
+}
+#confirm-msg div{
+	display: inline-block;
+	width: 45vw;
+	padding: 2em;
+	background-color: green;
+	color: white;
+	font-family: arial;
+	font-weight: bold;
+}
+
+#confirm-msg div span{
+	text-decoration: underline;
+}
+
+#email-list{
+	/*https://stackoverflow.com/questions/8232713/how-to-display-scroll-bar-onto-a-html-table*/
+	position:relative;
+}
+#table-scroll {
+  height: 50vh;
+  overflow:auto;  
+  margin-top:20px;
+}
+#email-list h1{
+	font-family: arial;
+	font-weight: normal;
+	text-decoration: underline;
+	margin-bottom: .5em;
+}
+
+table{
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 1em .5em;
+}
+thead{
+	font-weight: bold;
+}
